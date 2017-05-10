@@ -59,7 +59,7 @@ install_radare_git()
     git clone https://github.com/radare/radare2.git
     cd radare2
     echo "Install globally or to the user home directory?"
-    select gu in "Yes" "No"; do
+    select gu in "Global" "User"; do
         case $gu in
         Global ) sys/install.sh; break;;
         User ) sys/user.sh; break;;
